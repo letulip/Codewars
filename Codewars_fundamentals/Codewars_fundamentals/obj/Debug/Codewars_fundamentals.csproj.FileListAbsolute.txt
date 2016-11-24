@@ -1,0 +1,6 @@
+E:\ОБУЧЕНИЕ\Codewars\Codewars_fundamentals\Codewars_fundamentals\bin\Debug\Codewars_fundamentals.exe.config
+E:\ОБУЧЕНИЕ\Codewars\Codewars_fundamentals\Codewars_fundamentals\bin\Debug\Codewars_fundamentals.exe
+E:\ОБУЧЕНИЕ\Codewars\Codewars_fundamentals\Codewars_fundamentals\bin\Debug\Codewars_fundamentals.pdb
+E:\ОБУЧЕНИЕ\Codewars\Codewars_fundamentals\Codewars_fundamentals\obj\Debug\Codewars_fundamentals.csprojResolveAssemblyReference.cache
+E:\ОБУЧЕНИЕ\Codewars\Codewars_fundamentals\Codewars_fundamentals\obj\Debug\Codewars_fundamentals.exe
+E:\ОБУЧЕНИЕ\Codewars\Codewars_fundamentals\Codewars_fundamentals\obj\Debug\Codewars_fundamentals.pdb
