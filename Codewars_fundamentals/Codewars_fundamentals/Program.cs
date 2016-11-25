@@ -8,31 +8,48 @@ using System.Threading.Tasks;
 
 namespace Codewars_fundamentals
 {
-    //ConsecutiveStrings
+    //Dubstep
+    //WUBWUB_WUB_WUBWUB_
 
-    public class LongestConsecutives
+    public class Dubstep
     {
-
-        public static String LongestConsec(string[] strarr, int k)
+        public static string SongDecoder(string input)
         {
-            int max = 0;
-            int maxCount = 0;
-            string longest = null;
-
-            foreach (string str in strarr)
-            {
-                if (str.Count() > max)
-                {
-                    max = str.Count();
-                    maxCount++;
-                }
-            }
-
-            longest += strarr[max];
             
-            return longest;
+        }
+
+        static void Main()
+        {
+            Console.WriteLine(SongDecoder(Console.ReadLine()));
+            Console.ReadKey();
         }
     }
+
+    //ConsecutiveStrings
+
+    //public class LongestConsecutives
+    //{
+
+    //    public static String LongestConsec(string[] strarr, int k)
+    //    {
+    //        int max = 0;
+    //        int maxCount = 0;
+    //        string longest = null;
+
+    //        foreach (string str in strarr)
+    //        {
+    //            if (str.Count() > max)
+    //            {
+    //                max = str.Count();
+    //                maxCount++;
+    //            }
+    //        }
+
+    //        longest += strarr[max];
+
+    //        return longest;
+    //    }
+    //}
 
 
 
