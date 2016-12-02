@@ -8,46 +8,279 @@ using System.Threading.Tasks;
 
 namespace Codewars_fundamentals
 {
+    //Find the smallest
+
+    public class ToSmallest
+    {
+
+        public static long[] Smallest(long n)
+        {
+            string k = n.ToString();
+            
+               
+        }
+    }
+
+
+
+
+
+    //Bouncing Balls
+
+    //public class BouncingBall
+    //{
+
+    //    public static int bouncingBall(double h, double bounce, double window)
+    //    {
+    //        int bb = -1;
+
+    //        if (h > 0 && bounce > 0 && bounce < 1 && window < h)
+    //        {
+    //            do
+    //            {
+    //                h *= bounce;
+    //                bb+=2;
+    //            } while (h > window);
+
+    //            return bb;
+    //        }
+    //        else
+    //            return -1;            
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(bouncingBall(30.0, 0.66, 1.5));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Number climber
+    //3 =  2*1 + 1
+    //6 =  2*3
+    //13 = 2*6 + 1
+
+    //public class Kata
+    //{
+    //    public static List<int> Climb(int n)
+    //    {
+    //        List<Int32> numSeq = new List<int>();
+    //        int k = n;
+
+    //        if (n == 1)
+    //        {
+    //            numSeq.Add(k);
+    //        }
+    //        if (n == 2)
+    //        {
+    //            numSeq.Add(k);
+    //            numSeq.Add(1);
+    //        }
+    //        if (n > 2)
+    //        {                
+    //            numSeq.Add(k);
+    //            do
+    //            {
+    //                k /= 2;
+    //                numSeq.Add(k);
+    //            } while (k != 1);
+    //        }
+    //        numSeq.Reverse();
+    //        return numSeq;
+    //    }
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Climb(13));
+    //        Console.Read();
+    //    }
+    //}
+
+
+
+
+
+    //Find the stray number
+
+    //class Solution
+    //{
+    //    public static int Stray(int[] numbers)
+    //    {
+    //        Array.Sort(numbers);
+    //        return numbers[0] == numbers[1] ? numbers.Last() : numbers.First();
+    //        //int stray = 0;
+
+    //        //for (int i = 0; i < numbers.Length - 1; i++)
+    //        //{
+    //        //    if (numbers[i] == numbers[i + 1] && numbers[i] != numbers[numbers.Length - 1])
+    //        //    {
+    //        //        stray = numbers[numbers.Length - 1];
+    //        //        break;
+    //        //    }
+    //        //    else if (numbers[i] != numbers[i + 1] && numbers[i] == numbers[numbers.Length - 1])
+    //        //    {
+    //        //        stray = numbers[i + 1];
+    //        //        break;
+    //        //    }
+    //        //    else if (numbers[i] != numbers[i + 1] && numbers[i + 1] == numbers[numbers.Length - 1])
+    //        //    {
+    //        //        stray = numbers[i];
+    //        //        break;
+    //        //    }
+
+    //        //}
+
+    //        //return stray;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        int[] input = new int[] { 1, 1, 1, 2 };
+    //        Console.WriteLine(Stray(input));
+    //        Console.ReadKey();
+    //    }
+    //}
+
     //Dubstep
     //WUBWUB_WUB_WUBWUB_
 
-    public class Dubstep
-    {
-        public static string SongDecoder(string input)
-        {
-            
-        }
+    //public class Dubstep
+    //{
+    //    public static string SongDecoder(string input)
+    //    {
+    //        StringBuilder output = new StringBuilder(input);
 
-        static void Main()
-        {
-            Console.WriteLine(SongDecoder(Console.ReadLine()));
-            Console.ReadKey();
-        }
-    }
+    //        output.Replace("WUB", " ");
+    //        int i = 0;
+
+    //        do
+    //        {
+    //            if (output[i] == ' ' && output[i + 1] == ' ')
+    //            {
+    //                output.Remove(i, 1);
+    //            }
+    //            else
+    //            {
+    //                i++;
+    //            }
+    //        }
+    //        while (i < output.Length-1);
+
+    //        if (output[0] == ' ')
+    //            output.Remove(0, 1);
+
+    //        if (output[output.Length-1] == ' ')
+    //            output.Remove(output.Length - 1, 1);
+
+    //        return output.ToString();
+
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(SongDecoder(Console.ReadLine()));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
 
     //ConsecutiveStrings
 
     //public class LongestConsecutives
     //{
+    //    public class Str
+    //    {
+    //        public string str { get; set; }
+    //        public int length { get; set; }
+    //    }
 
     //    public static String LongestConsec(string[] strarr, int k)
     //    {
-    //        int max = 0;
-    //        int maxCount = 0;
-    //        string longest = null;
+    //        List<Str> list = new List<Str>();
+    //        string output = null;
 
-    //        foreach (string str in strarr)
-    //        {
-    //            if (str.Count() > max)
-    //            {
-    //                max = str.Count();
-    //                maxCount++;
-    //            }
+    //        for (int i = 0; i < strarr.Length; i++)
+    //        {                
+    //            list.Add(new Str() { str = strarr[i], length = strarr[i].Length });
     //        }
 
-    //        longest += strarr[max];
+    //        var result = list.OrderByDescending(s => s.length).ThenBy(s => s.str).ToArray();
 
-    //        return longest;
+    //        for (int i = 0; i < k-1; i++)
+    //        {
+    //            if (result[i] != result[i + 1])
+    //                output += result[i];
+    //        }
+
+    //        //foreach (Str s in result)
+    //        //    output = string.Join("", s, 0, k);
+
+    //        return output;
+
+    //        //string output = null;
+    //        //if (strarr.Length == 0 || k > strarr.Length || k <= 0)
+    //        //{
+    //        //    output = "";
+    //        //}
+    //        //else
+    //        //{
+    //        //    string temp = null;
+    //        //    for (int write = 0; write < strarr.Length; write++)
+    //        //    {
+    //        //        for (int sort = 0; sort < strarr.Length - 1; sort++)
+    //        //        {
+    //        //            if (strarr[sort].Count() > strarr[sort + 1].Count())
+    //        //            {
+    //        //                temp = strarr[sort + 1];
+    //        //                strarr[sort + 1] = strarr[sort];
+    //        //                strarr[sort] = temp;
+    //        //            }
+    //        //        }
+    //        //    }
+
+    //            //    output = strarr[strarr.Length - 1];
+    //            //    if (k >= 1)
+    //            //    {
+    //            //        int i = strarr.Length - 2;
+    //            //        int j = 1;
+
+    //            //        do
+    //            //        {
+    //            //            if (strarr[i] != strarr[i + 1])
+    //            //            {
+    //            //                if ((strarr[i].ToCharArray()[0] < strarr[i + 1].ToCharArray()[0]) & (strarr[i].ToCharArray().Length == strarr[i + 1].ToCharArray().Length))
+    //            //                {
+    //            //                    output += strarr[i];
+    //            //                }
+    //            //                if ((strarr[i].ToCharArray()[0] > strarr[i + 1].ToCharArray()[0]) & (strarr[i].ToCharArray().Length == strarr[i + 1].ToCharArray().Length))
+    //            //                {
+    //            //                    output += strarr[i + 1];
+    //            //                }
+    //            //                //else
+    //            //                //{
+    //            //                //    output += strarr[i];
+    //            //                //}
+    //            //                j++;
+    //            //            }
+    //            //            i--;
+    //            //        }
+    //            //        while (j != k);
+    //            //    }
+    //            //}
+    //            //return output;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        String[] myKeys = { "zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail" };
+    //        Console.WriteLine(LongestConsec(myKeys, 2));
+    //        Console.ReadKey();
     //    }
     //}
 
@@ -61,9 +294,20 @@ namespace Codewars_fundamentals
     //{
     //    public static int Number(List<int[]> peopleListInOut)
     //    {
-    //        int[] passangers = new int[2];
+    //        int finalCount = 0;
+    //        for (int i = 0; i < peopleListInOut.Count; i++)
+    //        {
+    //            finalCount += peopleListInOut[i][0];
+    //            finalCount -= peopleListInOut[i][1];
+    //        }
+    //        return finalCount;
+    //    }
 
-
+    //    static void Main()
+    //    {
+    //        List<int[]> peopleList = new List<int[]>() { new[] { 10, 0 }, new[] { 3, 5 }, new[] { 5, 8 } };
+    //        Console.WriteLine(Number(peopleList).ToString());
+    //        Console.ReadKey();
     //    }
     //}
 
@@ -269,27 +513,16 @@ namespace Codewars_fundamentals
     //    {
     //        if (str.Length > 0)
     //        {
-    //            string[] str1 = new string[str.Length*2];
+
+    //            string[] str1 = new string[str.Length];
 
     //            for (var i = 0; i < str.Length; i++)
     //            {
     //                str1[i] = (str[i] + "" + str[i]);
     //            }
 
-    //            return Convert.ToString(str1);
+    //            return string.Join("",str1);
 
-    //            //works in console only!
-
-    //            //char[] str1 = new char[str.Length * 2];
-
-    //            //for (var i = 0; i < str.Length; i++)
-    //            //{
-    //            //    Console.Write(str[i] + "" + str[i]);
-    //            //}
-
-    //            //string str2 = new string(str1);
-
-    //            //return Convert.ToString(str1);
     //        }
     //        else
     //            return String.Empty;
@@ -377,22 +610,32 @@ namespace Codewars_fundamentals
     //{
     //    public static long[] SumDigPow(long a, long b)
     //    {
+    //        int i = 0;
+    //        List<long> sumdigpow = new List<long>();
+
+    //        do
+    //        {
+    //            long digitcount = 0;
+    //            int count = 0;
+    //            string str = a.ToString();
+
+    //            for (int j = 0; j < str.Length; j++)
+    //            {
+    //                long s = Int32.Parse(str[j].ToString());
+    //                count++;
+    //                s = Convert.ToInt64(Math.Pow(Convert.ToDouble(s), count));
+    //                digitcount += s;
+    //            }
+    //            if (digitcount == a)
+    //                sumdigpow.Add(a);
 
 
+    //            a++;
+    //            i++;
 
-    //        //while (a<=b)
-    //        //{
+    //        } while (a <= b);
 
-    //        //    for (int i = 0; i < number.Length; i++)
-    //        //    {
-    //        //        digits[i] = Convert.ToInt64(Math.Pow(digits[i], (i + 1)));
-    //        //        sumdigits += digits[i];
-    //        //        if (sumdigits == a)
-    //        //            sumdigpow[i] = a;
-    //        //    }
-
-    //        //    a++;
-    //        //}
+    //        return sumdigpow.ToArray();
 
     //    }
 
@@ -400,7 +643,13 @@ namespace Codewars_fundamentals
     //    {
     //        long a = Convert.ToInt64(Console.ReadLine());
     //        long b = Convert.ToInt64(Console.ReadLine());
-    //        Console.WriteLine(SumDigPow(a,b));
+    //            string xyz = "";
+    //            for (int i = 0; i < SumDigPow(a, b).Length; i++)
+    //            {
+    //                xyz += SumDigPow(a, b)[i].ToString();
+    //                xyz += ", ";
+    //            }
+    //                Console.WriteLine(xyz);
     //        Console.ReadKey();
     //    }
     //}
