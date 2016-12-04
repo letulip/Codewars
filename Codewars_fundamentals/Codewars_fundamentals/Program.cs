@@ -8,18 +8,79 @@ using System.Threading.Tasks;
 
 namespace Codewars_fundamentals
 {
-    //Find the smallest
+    //Data Reverse
 
-    public class ToSmallest
-    {
-
-        public static long[] Smallest(long n)
+    namespace Main
+    {        
+        public class Kata
         {
-            string k = n.ToString();
-            
-               
+            public static int[] DataReverse(int[] data)
+            {
+                
+            }
         }
     }
+
+
+
+
+
+    //Sum of numbers from 0 to n
+
+    //public class SequenceSum
+    //{
+    //    public static string ShowSequence(int n)
+    //    {
+    //        if (n == 0)
+    //        {
+    //            return "0=0";
+    //        }
+    //        if (n < 0)
+    //        {
+    //            return string.Concat(n, "<0");
+    //        }
+    //        else
+    //        {
+    //            int z = 0;
+    //            int y = 0;
+    //            List<string> str = new List<string>();
+    //            str.Add("0");
+    //            string output;
+    //            while (z != n)
+    //            {
+    //                z += 1;
+    //                str.Add(z.ToString());
+    //                y += z;
+    //            }
+    //            output = string.Join("+", str);
+    //            output = string.Concat(output, " = ", y);
+    //            return output;
+    //        }
+
+    //    }
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(ShowSequence(6));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Find the smallest
+
+    //public class ToSmallest
+    //{
+
+    //    public static long[] Smallest(long n)
+    //    {
+    //        string k = n.ToString();
+
+
+    //    }
+    //}
 
 
 
