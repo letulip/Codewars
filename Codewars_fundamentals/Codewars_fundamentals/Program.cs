@@ -8,18 +8,310 @@ using System.Threading.Tasks;
 
 namespace Codewars_fundamentals
 {
+    //Turtoise racing
+
+    //public class Tortoise
+    //{
+    //    public static string Race(int v1, int v2, int g)
+    //    {
+    //        if (v1 >= v2)
+    //            return null;
+    //        else
+    //        {
+    //            var ts = System.TimeSpan.FromSeconds((g * 3600) / (v2 - v1));
+    //            return new[] { ts.Hours, ts.Minutes, ts.Seconds };
+
+    //            //int[] time = new int[3];
+
+    //            //double speed1 = Convert.ToDouble(v1) / 3600;
+    //            //double speed2 = Convert.ToDouble(v2) / 3600;
+
+    //            //double mile1 = g;
+    //            //double mile2 = 0;
+
+    //            //int h = 0;
+    //            //int m = 0;
+    //            //int s = 0;
+
+    //            //for (h = 0; ;)
+    //            //{
+    //            //    for (m = 0; m < 60;)
+    //            //    {
+    //            //        for (s = 0; s < 60; )
+    //            //        {
+    //            //            mile1 += speed1;
+    //            //            mile2 += speed2;
+
+    //            //            if (mile1 > mile2)
+    //            //                s++;
+    //            //            else
+    //            //                break;
+    //            //        }
+    //            //        if (mile1 > mile2)
+    //            //            m++;
+    //            //        else
+    //            //            break;
+    //            //    }
+    //            //    if (mile1 > mile2)
+    //            //        h++;
+    //            //    else
+    //            //        break;
+    //            //}
+
+    //            //time[0] = h;
+    //            //time[1] = m;
+    //            //time[2] = s;
+
+    //            //return string.Join(",", time);
+    //        }            
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Race(80, 100, 40));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Zebulan's Nightmare
+
+    //public class Kata
+    //{
+    //    public static string ZebulansNightmare(string functionName)
+    //    {
+    //        string[] str = functionName.Split('_');
+    //        for (int i = 1; i < str.Length; i++)
+    //        {
+    //            str[i] = str[i].Substring(0, 1).ToUpper() + str[i].Substring(1, str[i].Length - 1).ToLower();
+    //        }
+
+    //        return string.Join("", str);
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(ZebulansNightmare("trolling_is_fun"));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Fibonacci, Tribonacci and friends
+
+    //public class Xbonacci
+    //{
+    //    public double[] xbonacci(double[] signature, int n)
+    //    {
+    //        if (n == 0)
+    //        {
+    //            double[] result = new double[0];
+    //            return result;
+    //        }
+    //        else
+    //        {
+    //            double[] result = new double[n];
+
+    //            if (n < signature.Length)
+    //            {
+    //                for (int i = 0; i < n; i++)
+    //                {
+    //                    result[i] = signature[i];
+    //                }
+    //                return result;
+    //            }
+    //            else
+    //            {
+    //                for (int i = 0; i < signature.Length; i++)
+    //                {
+    //                    result[i] = signature[i];
+    //                }
+
+    //                for (int i = signature.Length; i < result.Length; i++)
+    //                {
+    //                    for (int j = signature.Length; j > 0; j--)
+    //                        result[i] += result[i - j];
+    //                }
+    //                return result;
+    //            }
+    //        }
+    //    }
+    //}
+
+    //    public static string Tribonacci(double[] signature, int n)
+    //    {
+    //        double[] result = new double[n];
+    //        if (n < signature.Length)
+    //        {
+    //            for (int i = 0; i < n; i++)
+    //            {
+    //                result[i] = signature[i];
+    //            }
+    //            return string.Join(",", result);
+    //        }
+    //        else
+    //        {
+    //            for (int i = 0; i < signature.Length; i++)
+    //            {
+    //                result[i] = signature[i];
+    //            }
+
+    //            for (int i = signature.Length; i < result.Length; i++)
+    //            {
+    //                for (int j = signature.Length; j > 0; j--)
+    //                    result[i] += result[i-j];
+    //            }
+    //            return string.Join(",", result);
+    //        }
+
+    //    }
+
+    //    static void Main()
+    //    {
+    //        double[] var = new double[] { 1, 19, 14, 3, 10, 11, 16, 1, 5, 15, 12, 18, 7, 10, 7, 9, 13, 17 };
+
+    //        Console.WriteLine(Tribonacci(var, 66));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Tribonacci Sequence
+    //It should work with random inputs too
+    //Expected is <System.Double[39]>, actual is <System.String>
+    //Values differ at index[0]
+    //Expected: 7.0d
+    //But was:  '7'
+
+    //public class Xbonacci
+    //{
+    //    public static string Tribonacci(double[] signature, int n)
+    //    {
+    //        double[] result = new double[n];
+    //        if (n == 0)
+    //        {
+    //            return Convert.ToDouble(0);
+    //        }
+    //        if (n < signature.Length)
+    //        {
+    //            for (int i = 0; i < n; i++)
+    //            {
+    //                result[i] = signature[i];
+    //            }
+    //            return string.Join(",", result);
+    //        }
+    //        else
+    //        {
+    //            for (int i = 0; i < signature.Length; i++)
+    //            {
+    //                result[i] = signature[i];
+    //            }
+
+    //            for (int i = signature.Length; i < result.Length; i++)
+    //            {
+    //                result[i] = result[i - 3] + result[i - 2] + result[i - 1];
+    //            }
+    //            return string.Join(",", result);
+    //        }
+
+    //    }
+
+    //    static void Main()
+    //    {
+    //        double[] var = new double[] { 13, 8, 18 };
+
+    //        Console.WriteLine(Tribonacci(var, 2));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Are they the same?
+
+    //class AreTheySame
+    //{
+    //    public static bool comp(int[] a, int[] b)
+    //    {
+    //        if (a == null || b == null)
+    //            return false;
+    //        if (a.Length == b.Length)
+    //        {
+    //            Array.Sort(a);
+    //            Array.Sort(b);
+    //            for (int i = 0; i < a.Length;)
+    //            {
+    //                if (a[i].ToString() == null || b[i].ToString() == null)
+    //                    return false;
+    //                if (Math.Pow(a[i], 2) == b[i])
+    //                {
+    //                    i++;
+    //                }
+    //                else
+    //                    return false;
+    //            }
+    //            return true;
+    //        }
+    //        else
+    //            return false;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        int[] a = null;
+    //        int[] b = null;
+
+    //        Console.WriteLine(comp(a, b));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
     //Data Reverse
 
-    namespace Main
-    {        
-        public class Kata
-        {
-            public static int[] DataReverse(int[] data)
-            {
-                
-            }
-        }
-    }
+    //namespace Main
+    //{
+    //    public class Kata
+    //    {
+    //        public static string DataReverse(int[] data)
+    //        {
+    //            int[] dataReverse = data.Reverse().ToArray();
+    //            int[] output = new int[data.Length];
+
+    //            for (int i = 0; i < data.Length; )
+    //            {
+    //                foreach (int j in dataReverse.Skip(i).Take(8).Reverse().ToArray())
+    //                {
+    //                    output[i] = j;
+    //                    i++;
+    //                }
+
+    //            }
+
+    //            return string.Join(",", output);
+    //        }
+    //        static void Main()
+    //        {
+    //            int[] data1 = new int[32] { 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0 };
+    //            Console.WriteLine(DataReverse(data1));
+    //            Console.ReadKey();
+    //        }
+    //    }
+    //}
 
 
 
@@ -73,11 +365,13 @@ namespace Codewars_fundamentals
 
     //public class ToSmallest
     //{
-
     //    public static long[] Smallest(long n)
     //    {
-    //        string k = n.ToString();
 
+    //    }
+
+    //    static void Main()
+    //    {
 
     //    }
     //}
