@@ -8,6 +8,89 @@ using System.Threading.Tasks;
 
 namespace Codewars_fundamentals
 {
+    //TDD Area Calculations
+    //What is this shit anyway?!
+
+    //public class AreaCount
+    //{
+    //    //private Calculator sut = new Calculator();
+
+    //    public static double Tringle(double h, double w)
+    //    {
+    //        return w * h / 2;
+    //    }
+    //    public static double Square(double h)
+    //    {
+    //        return h * h;
+    //    }
+    //    public static double Rectangle(double h, double w)
+    //    {
+    //        return h * w;
+    //    }
+    //    public static double Cicle(double r)
+    //    {
+    //        return Math.PI * r * r;
+    //    }
+    //    public static double GetTotalArea(double[] areas)
+    //    {
+    //        double totalArea = 0;
+    //        for (int i = 0; i < areas.Length; i++)
+    //        {
+    //            totalArea += areas[i];
+    //        }
+    //        return totalArea;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        double[] areas = {new Rectangle(10,20), 
+    //        Console.WriteLine(GetTotalArea(new recta));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Speed control
+    
+    //public class GpsSpeed
+    //{
+    //    public static int Gps(int s, double[] x)
+    //    {
+    //        int maxSpeed = 0;
+
+    //        if (x.Length <= 1)
+    //        {
+    //            maxSpeed = 0;
+    //        }
+
+    //        else
+    //        {
+    //            double[] speed = new double[x.Length - 1];
+    //            for (int i = 0; i < speed.Length; i++)
+    //            {
+    //                speed[i] = ((x[i + 1] - x[i]) / s)*3600;
+    //            }
+    //            maxSpeed = Convert.ToInt32(speed.Max());
+    //        }
+
+    //        return maxSpeed;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        double[] x = new double[] { 0.0 };
+    //        Console.WriteLine(Gps(15, x));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
     //Turtoise racing
 
     //public class Tortoise
