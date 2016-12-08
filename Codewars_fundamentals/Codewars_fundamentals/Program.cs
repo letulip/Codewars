@@ -8,30 +8,101 @@ using System.Threading.Tasks;
 
 namespace Codewars_fundamentals
 {
+    //You are a cube
+
+    //public class Kata
+    //{
+    //    public static bool YouAreACube(int value)
+    //    {
+    //        int result = (int)Math.Pow(value, 1.0/3);
+    //        if (result * result * result == value | (result + 1) * (result + 1) * (result + 1) == value)
+    //        {
+    //            return true;
+    //        }
+    //        else
+    //            return false;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(YouAreACube(9));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
     //TDD Area Calculations
     //What is this shit anyway?!
 
-    //public class AreaCount
+    //public class Calculator
     //{
-    //    //private Calculator sut = new Calculator();
+    //    public class Triangle
+    //    {
+    //        public double width, height;
 
-    //    public static double Tringle(double h, double w)
-    //    {
-    //        return w * h / 2;
+    //        public Triangle(double h, double w)
+    //        {
+    //            width = w;
+    //            height = h;
+    //        }
+
+    //        public double triangleArea()
+    //        {
+    //            return width * height / 2;
+    //        }
     //    }
-    //    public static double Square(double h)
+        
+        
+    //    public class Square
     //    {
-    //        return h * h;
+    //        private double side;
+
+    //        public Square(double s)
+    //        {
+    //            side = s;
+    //        }
+
+    //        public double squareArea()
+    //        {
+    //            return side * side;
+    //        }
     //    }
-    //    public static double Rectangle(double h, double w)
+
+    //    public class Rectangle
     //    {
-    //        return h * w;
+    //        private double width, height;
+
+    //        public Rectangle(double h, double w)
+    //        {
+    //            width = w;
+    //            height = h;
+    //        }
+
+    //        public double rectangleArea()
+    //        {
+    //            return width * height;
+    //        }
     //    }
-    //    public static double Cicle(double r)
+
+    //    public class Circle
     //    {
-    //        return Math.PI * r * r;
+    //        private double radius;
+
+    //        public Circle(double r)
+    //        {
+    //            radius = r;
+    //        }
+
+    //        public double circleArea()
+    //        {
+    //            return Math.PI * radius * radius;
+    //        }
     //    }
-    //    public static double GetTotalArea(double[] areas)
+
+    //    public double GetTotalArea(double[] areas)
     //    {
     //        double totalArea = 0;
     //        for (int i = 0; i < areas.Length; i++)
@@ -43,18 +114,21 @@ namespace Codewars_fundamentals
 
     //    static void Main()
     //    {
-    //        double[] areas = {new Rectangle(10,20), 
-    //        Console.WriteLine(GetTotalArea(new recta));
+    //        Calculator calc = new Calculator();
+    //        //double[] areas = { new Triangle(10, 20), new Square(6), };
+    //        var square = new Square(6);
+    //        Console.WriteLine(square.squareArea());
     //        Console.ReadKey();
     //    }
     //}
+    
 
 
 
 
 
     //Speed control
-    
+
     //public class GpsSpeed
     //{
     //    public static int Gps(int s, double[] x)
