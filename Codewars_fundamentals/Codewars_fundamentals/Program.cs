@@ -5,9 +5,50 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Codewars_fundamentals
 {
+    //Ermahgerd
+    
+    //public class Kata
+    //{
+    //    public static string Ermahgerd(string text)
+    //    {
+    //        string output = text.ToUpper();
+
+    //        output = output.Replace("E", "ER");
+    //        output = output.Replace("A", "ER");
+    //        output = output.Replace("I", "ER");
+    //        output = output.Replace("O", "ER");
+    //        output = output.Replace("U", "ER");
+    //        output = output.Replace("MY", "MAH");
+    //        output = output.Replace("ERH", "ER");
+    //        output = output.Replace("RRR", "R");
+    //        output = output.Replace("ERER", "ER");
+    //        output = output.Replace("RR", "R");
+
+    //        string pattern = @"\BER\b";
+    //        string target = @"";
+
+    //        Regex regex = new Regex(pattern);
+            
+    //        output = regex.Replace(output, target);
+
+    //        return output;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Ermahgerd("my name is ohmygod girl and I love codewars!"));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
     //You are a cube
 
     //public class Kata
@@ -54,8 +95,8 @@ namespace Codewars_fundamentals
     //            return width * height / 2;
     //        }
     //    }
-        
-        
+
+
     //    public class Square
     //    {
     //        private double side;
@@ -121,7 +162,7 @@ namespace Codewars_fundamentals
     //        Console.ReadKey();
     //    }
     //}
-    
+
 
 
 
