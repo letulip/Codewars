@@ -9,8 +9,556 @@ using System.Text.RegularExpressions;
 
 namespace Codewars_fundamentals
 {
+    //Disease Spread
+
+    //class Epidem
+    //{
+    //    public static int Epidemic(int tm, int n, int s0, int i0, double b, double a)
+    //    {
+    //        int result = 0;
+    //        List<double> suspect = new List<double> { s0 };
+    //        List<double> infect = new List<double> { i0 };
+    //        List<double> recover = new List<double> { 0 };
+    //        double dt = (double)tm / n;
+
+    //        for (int i = 0; i < tm; i++)
+    //        {
+    //            for (int j = 1; j < n+1;)
+    //            {                    
+    //                suspect.Add((suspect[j - 1] - dt * b * suspect[j - 1] * infect[j - 1]));
+    //                infect.Add((infect[j - 1] + dt * (b * suspect[j - 1] * infect[j - 1] - a * infect[j - 1])));
+    //                recover.Add((recover[j - 1] + dt * infect[j - 1] * a));
+
+    //                if (infect[j] > 0)
+    //                {
+    //                    j++;
+    //                }
+    //                else break;                    
+    //            }                
+    //        }
+    //        result = (int)infect.Max();
+
+    //        return result;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Epidemic(14, 336, 996, 2, 0.00206, 0.41));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //How much hex is the fish
+
+    //public class Kata
+    //{
+    //    public static int FisHex(string name)
+    //    {
+
+
+    //        return 0;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(FisHex("redlionfish"));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Binary to Text (ASCII) Conversion
+
+    //public static class Kata
+    //{
+    //    public static string BinaryToString(string binary)
+    //    {
+    //        if (binary.Length == 0)
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            var text = new StringBuilder();
+
+    //            for (int i = 0; i < binary.Length; i += 8)
+    //            {
+    //                string section = binary.Substring(i, 8);
+    //                int ascii = 0;
+    //                ascii = Convert.ToInt32(section, 2);
+    //                text.Append((char)ascii);
+    //            }
+
+    //            return text.ToString();
+    //        }
+
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(BinaryToString("0100100001100101011011000110110001101111"));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //PatternCraft - Decorator
+
+    //public interface IMarine
+    //{
+    //    int Damage { get; set; }
+    //    int Armor { get; set; }
+    //}
+
+    //public class Marine : IMarine
+    //{
+    //    public Marine(int damage, int armor)
+    //    {
+    //        Damage = damage;
+    //        Armor = armor;
+    //    }
+
+    //    public int Damage { get; set; }
+    //    public int Armor { get; set; }
+    //}
+
+    //public class MarineWeaponUpgrade : IMarine
+    //{
+    //    private IMarine marine;
+
+    //    public MarineWeaponUpgrade(IMarine marine)
+    //    {
+    //        marine.Damage++;     
+    //        this.marine = marine;
+    //        //++this.marine.Damage;
+    //    }
+
+    //    public int Damage { get { return this.marine.Damage; } set { } }
+
+    //    public int Armor { get { return this.marine.Armor; } set {  } }
+    //}
+
+    //public class MarineArmorUpgrade : IMarine
+    //{
+    //    private IMarine marine;
+
+    //    public MarineArmorUpgrade(IMarine marine)
+    //    {
+    //        marine.Armor++;
+    //        this.marine = marine;
+    //        //++this.marine.Armor;
+    //    }
+
+    //    public int Damage { get { return this.marine.Damage; } set { } }
+
+    //    public int Armor { get { return this.marine.Armor; } set {  } }
+    //}
+
+    //public class DecoratorDemo
+    //{
+    //    static void Main()
+    //    {
+    //        IMarine marine = new Marine(15, 1);
+    //        //int a = new MarineWeaponUpgrade(marine).Damage;
+    //        //int b = new MarineWeaponUpgrade(marine).Damage;
+
+    //        marine = new MarineWeaponUpgrade(marine);
+    //        marine = new MarineWeaponUpgrade(marine);
+    //        marine = new MarineArmorUpgrade(marine);
+
+    //        Console.WriteLine(marine.Damage);
+    //        Console.WriteLine(marine.Armor);
+
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //PatternCraft - State
+
+    //public interface IUnit
+    //{
+    //    IUnitState State { get; set; }
+    //    bool CanMove { get; set; }
+    //    int Damage { get; set; }
+    //}
+
+    //public interface IUnitState
+    //{
+    //    bool CanMove { get; set; }
+    //    int Damage { get; set; }
+    //}
+
+    //public class SiegeState : IUnitState
+    //{
+    //    public SiegeState()
+    //    {
+    //        CanMove = false;
+    //        Damage = 20;
+    //    }
+
+    //    public bool CanMove { get; set; }
+    //    public int Damage { get; set; }
+    //}
+
+    //public class TankState : IUnitState
+    //{
+    //    public TankState()
+    //    {           
+    //        CanMove = true;
+    //        Damage = 5;
+    //    }
+
+    //    public bool CanMove { get; set; }
+    //    public int Damage { get; set; }
+    //}
+
+    //public class Tank : IUnit
+    //{
+    //    public Tank()
+    //    {
+    //        State = new TankState();
+    //    }
+
+    //    public IUnitState State { get; set; }
+
+    //    public bool CanMove { get { return State.CanMove; }  set { } }
+    //    public int Damage { get { return State.Damage; } set { } }
+    //}
+
+    //public class TankModeTest
+    //{
+    //    static void Main()
+    //    {
+    //        IUnit tank = new Tank();
+
+    //        Console.WriteLine(tank.CanMove);
+    //        //Console.WriteLine(tank.Damage);
+
+    //        tank.State = new SiegeState();
+
+    //        //Console.WriteLine(tank.CanMove);
+    //        Console.WriteLine(tank.Damage);
+
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //PatternCraft - Visitor
+
+    //public interface IVisitor
+    //{
+    //    void VisitLight(ILightUnit unit);
+    //    void VisitArmored(IArmoredUnit unit);
+    //}
+
+    //public interface ILightUnit
+    //{
+    //    int Health { get; set; }
+
+    //    void Accept(IVisitor visitor);
+    //}
+
+    //public interface IArmoredUnit
+    //{
+    //    int Health { get; set; }
+
+    //    void Accept(IVisitor visitor);
+    //}
+
+    //public class Marine : ILightUnit
+    //{
+    //    public Marine()
+    //    {
+    //        this.Health = 100;
+    //    }
+
+    //    public int Health { get; set; }
+
+    //    public void Accept(IVisitor visitor)
+    //    {
+    //        Health -= 25;
+    //    }
+    //}
+
+    //public class Marauder : IArmoredUnit
+    //{        
+    //    public Marauder()
+    //    {
+    //        this.Health = 125;
+    //    }
+
+    //    public int Health { get; set; }
+
+    //    public void Accept(IVisitor visitor)
+    //    {
+    //        Health -= 32;
+    //    }
+    //}
+
+    //public class TankBullet : IVisitor
+    //{
+    //    public void VisitLight(ILightUnit unit)
+    //    {
+    //        unit.Health -= 25;
+    //    }
+
+    //    public void VisitArmored(IArmoredUnit unit)
+    //    {
+    //        unit.Health -= 32;
+    //    }
+    //}
+
+    //public class VisitDemo
+    //{
+    //    static void Main()
+    //    {
+    //        IVisitor bullet = new TankBullet();
+    //        ILightUnit light = new Marine();
+
+    //        light.Accept(bullet);
+
+    //        Console.WriteLine(light.Health);
+
+    //        IVisitor bullet1 = new TankBullet();
+    //        IArmoredUnit armored = new Marauder();
+
+    //        bullet.VisitArmored(armored);
+
+    //        Console.WriteLine(armored.Health);
+
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+    //PatternCraft - Adapter
+
+    //public class Target
+    //{
+    //    public int Health { get; set; }
+    //}
+    //public interface IUnit
+    //{
+    //    void Attack(Target target);
+    //}
+
+    //public class Marine : IUnit
+    //{
+    //    public void Attack(Target target)
+    //    {
+    //        target.Health -= 6;
+    //    }
+    //}
+
+    //public class Zealot : IUnit
+    //{
+    //    public void Attack(Target target)
+    //    {
+    //        target.Health -= 8;
+    //    }
+    //}
+
+    //public class Zergling : IUnit
+    //{
+    //    public void Attack(Target target)
+    //    {
+    //        target.Health -= 5;
+    //    }
+    //}
+
+    //public class Mario
+    //{
+    //    public int jumpAttack()
+    //    {
+    //        Console.WriteLine("Mamamia!");
+    //        return 3;
+    //    }
+    //}
+
+    //public class MarioAdapter : IUnit
+    //{
+    //    private Mario mario;
+
+    //    public MarioAdapter(Mario mario)
+    //    {
+    //        this.mario = mario;
+    //    }
+
+    //    public void Attack(Target target)
+    //    {
+    //        target.Health -= mario.jumpAttack();
+    //    }
+    //}
+
+    //public class MarioTest
+    //{
+    //    static void Main()
+    //    {
+    //        var marioAdapter = new MarioAdapter(new Mario());
+    //        var target = new Target { Health = 33 };
+
+    //        marioAdapter.Attack(target);
+
+    //        Console.WriteLine(target.Health);
+
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+    //PatternCraft - Strategy
+
+    //public interface IUnit
+    //{
+    //    int Position { get; set; }
+    //    void Move();
+    //    IMoveBehavior MoveBehavior { get; set; }
+    //}
+
+    //public interface IMoveBehavior
+    //{
+    //    void Move(IUnit unit);
+    //}
+
+    //public class Fly : IMoveBehavior
+    //{
+    //    public void Move(IUnit unit)
+    //    {
+    //        unit.Position += 10;
+    //    }
+    //}
+
+    //public class Walk : IMoveBehavior
+    //{
+    //    public void Move(IUnit unit)
+    //    {
+    //        unit.Position += 1;
+    //    }
+    //}
+
+    //public class Viking : IUnit
+    //{
+    //    public Viking()
+    //    {
+    //        Position = 0;
+    //        MoveBehavior = new Walk();            
+    //    }
+
+    //    public IMoveBehavior MoveBehavior { get; set; }
+
+    //    public int Position { get; set; }
+
+    //    public void Move()
+    //    {
+    //        MoveBehavior.Move(this);
+    //    }
+    //}
+
+    //public class VikingMoveTest
+    //{
+    //    static void Main()
+    //    {
+    //        IUnit viking = new Viking();
+
+    //        viking.Move();
+    //        Console.WriteLine(viking.Position);
+
+    //        viking.MoveBehavior = new Fly();
+    //        viking.Move();
+
+    //        Console.WriteLine(viking.Position);
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Braking well
+
+    //public class Braking
+    //{
+
+    //    public static double Dist(double v, double mu)        // suppose reaction time is 1
+    //    {
+    //        double dist = 0.0;
+
+    //        v = v * 1000 / 3600;
+
+    //        dist = ((v * v) / (2 * mu * 9.81));
+
+    //        dist += (v * 1);
+
+    //        return dist;
+    //    }
+    //    public static double Speed(double d, double mu)       // suppose reaction time is 1
+    //    {
+    //        double speed = 0.0;
+    //        double disc = 0.0;
+    //        double s1 = 0.0;
+    //        double s2 = 0.0;
+
+    //        disc = Math.Pow(2 * mu * 9.81, 2) - 4 * (-2 * mu * 9.81 * d);
+
+    //        if (disc > 0 || disc == 0)
+    //        {
+    //            s1 = (-(2 * mu * 9.81) + Math.Sqrt(disc)) / (2 * 1);
+    //            s2 = (-(2 * mu * 9.81) - Math.Sqrt(disc)) / (2 * 1);  
+    //        }
+
+    //        if ( s1 > 0)
+    //        {
+    //            speed = s1;
+    //        }
+    //        else
+    //        {
+    //            speed = s2;
+    //        }
+
+    //        //speed = Math.Sqrt(2 * mu * 9.81 * d);
+            
+    //        speed = speed * 3600.0 / 1000.0;
+
+    //        return speed;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Dist(100, 0.7));
+    //        Console.WriteLine(Speed(83.9598760937531, 0.7)); //dist	83.9598760937531  56.182098315975317
+
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
     //Ermahgerd
-    
+
     //public class Kata
     //{
     //    public static string Ermahgerd(string text)
@@ -32,7 +580,7 @@ namespace Codewars_fundamentals
     //        string target = @"";
 
     //        Regex regex = new Regex(pattern);
-            
+
     //        output = regex.Replace(output, target);
 
     //        return output;
@@ -755,84 +1303,70 @@ namespace Codewars_fundamentals
 
     //    public static String LongestConsec(string[] strarr, int k)
     //    {
-    //        List<Str> list = new List<Str>();
-    //        string output = null;
-
-    //        for (int i = 0; i < strarr.Length; i++)
-    //        {                
-    //            list.Add(new Str() { str = strarr[i], length = strarr[i].Length });
-    //        }
-
-    //        var result = list.OrderByDescending(s => s.length).ThenBy(s => s.str).ToArray();
-
-    //        for (int i = 0; i < k-1; i++)
+    //        if (k > strarr.Length || k <= 0)
     //        {
-    //            if (result[i] != result[i + 1])
-    //                output += result[i];
+    //            return "";
     //        }
 
-    //        //foreach (Str s in result)
-    //        //    output = string.Join("", s, 0, k);
+    //        else
+    //        {
+    //            List<Str> list = new List<Str>();
+    //            string output = "";
 
-    //        return output;
 
-    //        //string output = null;
-    //        //if (strarr.Length == 0 || k > strarr.Length || k <= 0)
-    //        //{
-    //        //    output = "";
+    //            for (int i = 0; i <= strarr.Length - k; i++)
+    //            {
+    //                string str1 = "";
+    //                for (int g = i; g < k + i; g++)
+    //                {
+    //                    str1 += string.Join("", strarr[g]);
+    //                }
+    //                list.Add(new Str() { str = str1, length = str1.Length });
+    //            }
+
+    //            var result = list.OrderByDescending(s => s.length).ToList();
+
+    //            output = result[0].str;
+
+    //            return output;
+    //        }
+            
+
+    //        //List<Str> list = new List<Str>();
+    //        //string output = "";
+
+    //        //for (int i = 0; i < strarr.Length; i++)
+    //        //{                
+    //        //    list.Add(new Str() { str = strarr[i], length = strarr[i].Length });
     //        //}
-    //        //else
+
+    //        //var result = list.OrderByDescending(s => s.length).ThenByDescending(s => s.str).ToList();
+
+    //        //int j = 0;
+
+    //        //for (int i = 0; i < result.Count-1; i++)
     //        //{
-    //        //    string temp = null;
-    //        //    for (int write = 0; write < strarr.Length; write++)
+    //        //    if (result[i].str != result[i + 1].str && j < k)
     //        //    {
-    //        //        for (int sort = 0; sort < strarr.Length - 1; sort++)
-    //        //        {
-    //        //            if (strarr[sort].Count() > strarr[sort + 1].Count())
-    //        //            {
-    //        //                temp = strarr[sort + 1];
-    //        //                strarr[sort + 1] = strarr[sort];
-    //        //                strarr[sort] = temp;
-    //        //            }
-    //        //        }
+    //        //        output += string.Join("", result[i].str);
+    //        //        j++;
     //        //    }
+    //        //}
 
-    //            //    output = strarr[strarr.Length - 1];
-    //            //    if (k >= 1)
-    //            //    {
-    //            //        int i = strarr.Length - 2;
-    //            //        int j = 1;
-
-    //            //        do
-    //            //        {
-    //            //            if (strarr[i] != strarr[i + 1])
-    //            //            {
-    //            //                if ((strarr[i].ToCharArray()[0] < strarr[i + 1].ToCharArray()[0]) & (strarr[i].ToCharArray().Length == strarr[i + 1].ToCharArray().Length))
-    //            //                {
-    //            //                    output += strarr[i];
-    //            //                }
-    //            //                if ((strarr[i].ToCharArray()[0] > strarr[i + 1].ToCharArray()[0]) & (strarr[i].ToCharArray().Length == strarr[i + 1].ToCharArray().Length))
-    //            //                {
-    //            //                    output += strarr[i + 1];
-    //            //                }
-    //            //                //else
-    //            //                //{
-    //            //                //    output += strarr[i];
-    //            //                //}
-    //            //                j++;
-    //            //            }
-    //            //            i--;
-    //            //        }
-    //            //        while (j != k);
-    //            //    }
-    //            //}
-    //            //return output;
+    //        //return output;
     //    }
 
     //    static void Main()
     //    {
     //        String[] myKeys = { "zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail" };
     //        Console.WriteLine(LongestConsec(myKeys, 2));
+
+    //        String[] myKeys1 = { "itvayloxrp", "wkppqsztdkmvcuwvereiupccauycnjutlv", "vweqilsfytihvrzlaodfixoyxvyuyvgpck" };
+    //        Console.WriteLine(LongestConsec(myKeys1, 2));
+
+    //        String[] myKeys2 = { };
+    //        Console.WriteLine(LongestConsec(myKeys2, -2));
+
     //        Console.ReadKey();
     //    }
     //}
