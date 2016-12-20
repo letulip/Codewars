@@ -9,6 +9,172 @@ using System.Text.RegularExpressions;
 
 namespace Codewars_fundamentals
 {
+    //Required Data I
+
+    public class Kata
+    {
+        public static object[] CountSel(int[] lst)
+        {
+            int[] result = new int[] { 0, 0, 0, 0 };
+
+            result[0] = lst.Length;
+
+
+            return new object[0];
+        }
+
+        static void Main()
+        {
+            Console.WriteLine(CountSel(new[] { 4, 4, 2, -3, 1, 4, 3, 2, 0, -5, 2, -2, -2, -5 }));
+            Console.ReadKey();
+        }
+    }
+
+
+
+
+
+    //Highest number with two prime factors
+
+    //public class Highest2Factors
+    //{
+    //    public static long[] HighestBiPrimeFac(long p1, long p2, long n)
+    //    {
+    //        // your code
+    //        long[] rez = new long[] { 0, 0, 0 };
+    //        for (int i = 1; i <= 20; i++)
+    //            for (int j = 1; j <= 20; j++)
+    //            {
+    //                var tmp = (long)(Math.Pow(p1, i) * Math.Pow(p2, j));
+    //                if (tmp <= n && tmp > rez[0]) { rez[0] = tmp; rez[1] = i; rez[2] = j; }
+    //            }
+    //        return rez;
+
+    //    }
+
+    //    //public class Str
+    //    //{
+    //    //    public long Result { get; set; }
+    //    //    public long K1 { get; set; }
+    //    //    public long K2 { get; set; }
+    //    //}
+
+    //    //public static string HighestBiPrimeFac(long p1, long p2, long n)
+    //    //{
+    //    //    List<Str> output = new List<Str>();
+
+    //    //    if ( n < 100000)
+    //    //    {
+    //    //        for (long k2 = 1; k2 < n; k2++)
+    //    //        {
+    //    //            for (long k1 = 1; k1 < n; k1++)
+    //    //            {
+    //    //                var result = (long)(Math.Pow(p1, k1) * Math.Pow(p2, k2));
+    //    //                if (result <= n && result > 0)
+    //    //                {
+    //    //                    output.Add(new Str() { Result = result, K1 = k1, K2 = k2 });
+    //    //                }
+    //    //                else
+    //    //                    break;
+    //    //            }
+    //    //        }
+    //    //    }
+
+    //    //    else
+    //    //    {
+    //    //        for (long k2 = 1; k2 < p2; k2++)
+    //    //        {
+    //    //            for (long k1 = 1; k1 < p2; k1++)
+    //    //            {
+    //    //                var result = (long)(Math.Pow(p1, k1) * Math.Pow(p2, k2));
+    //    //                if (result <= n && result > 0)
+    //    //                {
+    //    //                    output.Add(new Str() { Result = result, K1 = k1, K2 = k2 });
+    //    //                }
+    //    //                else
+    //    //                    break;
+    //    //            }
+    //    //        }
+    //    //    }            
+
+    //    //    var outputResult = output.OrderByDescending(s => s.Result).ToList();
+
+    //    //    long[] Res = { outputResult[0].Result, outputResult[0].K1, outputResult[0].K2 };
+
+    //    //    //return Res;
+    //    //    return string.Join(",", Res);
+    //    //}
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(HighestBiPrimeFac(2, 3, 50));
+    //        Console.WriteLine(HighestBiPrimeFac(5, 11, 1000));
+    //        Console.WriteLine(HighestBiPrimeFac(3, 13, 5000));
+    //        Console.WriteLine(HighestBiPrimeFac(5, 7, 5000));
+    //        Console.WriteLine(HighestBiPrimeFac(2, 31, 50000));
+    //        Console.WriteLine(HighestBiPrimeFac(103, 631, 4451183533));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Sort the Odd
+
+    //public class Kata
+    //{
+    //    public static string SortArray(int[] array)
+    //    {
+    //        List<int> outputSort = new List<int> { };
+    //        List<int> outputOdd = new List<int> { };
+
+    //        if (array == null)
+    //        {
+    //            return null;
+    //        }
+    //        else
+    //        {
+    //            for (int i = 0; i < array.Length; i++)
+    //            {
+    //                if (array[i] % 2 == 1)
+    //                    outputOdd.Add(array[i]);                    
+    //            }
+    //            outputOdd.Sort();
+    //            int j = 0;
+
+    //            for (int i = 0; i < array.Length;)
+    //            {
+    //                if (array[i] % 2 == 1)
+    //                    {
+    //                        outputSort.Add(outputOdd[j]);
+    //                        i++;
+    //                        j++;
+    //                    }
+    //                    else
+    //                    {
+    //                        outputSort.Add(array[i]);
+    //                        i++;
+    //                    }                            
+
+    //            }
+
+    //            return string.Join(",", outputSort);
+    //        }            
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(SortArray(new int[] { 5, 3, 2, 8, 1, 4 }));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
     //Disease Spread
 
     //class Epidem
@@ -538,7 +704,7 @@ namespace Codewars_fundamentals
     //        }
 
     //        //speed = Math.Sqrt(2 * mu * 9.81 * d);
-            
+
     //        speed = speed * 3600.0 / 1000.0;
 
     //        return speed;
@@ -624,93 +790,178 @@ namespace Codewars_fundamentals
 
 
     //TDD Area Calculations
-    //What is this shit anyway?!
+
+    //public class TwoDShape
+    //{
+    //    double priWidth;
+    //    double priHeight;
+
+    //    public double Width
+    //    {
+    //        get { return priWidth; }
+    //        set { priWidth = value < 0 ? -value : value; }
+    //    }
+
+    //    public double Height
+    //    {
+    //        get { return priHeight; }
+    //        set { priHeight = value < 0 ? -value : value; }
+    //    }
+
+    //    public TwoDShape()
+    //    {
+    //        Width = Height = 0.0;
+    //    }
+
+    //    public TwoDShape(double W, double H)
+    //    {
+    //        Width = W;
+    //        Height = H;
+    //    }
+
+    //    public TwoDShape(double x)
+    //    {
+    //        Width = Height = x;
+    //    }
+
+    //    public TwoDShape(TwoDShape obj)
+    //    {
+    //        Width = obj.Width;
+    //        Height = obj.Height;
+    //    }
+
+    //    public virtual double Area()
+    //    {
+    //        return Width * Height;
+    //    }        
+    //}
+
+    //class Triangle : TwoDShape
+    //{
+    //    public Triangle()
+    //    {
+
+    //    }
+
+    //    public Triangle(double W, double H) : base(W, H)
+    //    {            
+
+    //    }
+
+    //    public Triangle(double x) : base(x)
+    //    {
+
+    //    }
+
+    //    public override double Area()
+    //    {
+    //        return Width * Height / 2;
+    //    }
+
+    //    public Triangle(Triangle obj) : base(obj)
+    //    {
+
+    //    }        
+    //}
+
+    //class Rectangle : TwoDShape
+    //{
+    //    public Rectangle(double W, double H) : base(W, H)
+    //    {
+
+    //    }
+
+    //    public Rectangle(Rectangle obj) : base(obj)
+    //    {
+
+    //    }        
+    //}
+
+    //class Square : TwoDShape
+    //{        
+    //    public Square(double s) : base(s)
+    //    {
+
+    //    }
+
+    //    public Square(Square obj) : base(obj)
+    //    {
+
+    //    }
+
+    //    public override double Area()
+    //    {
+    //        return Width * Width;
+    //    }
+    //}
+
+    //class Circle : TwoDShape
+    //{
+    //    public Circle(double x) : base(x)
+    //    {
+
+    //    }
+
+    //    public Circle(Circle obj) : base(obj)
+    //    {
+
+    //    }
+
+    //    public override double Area()
+    //    {
+    //        return Math.PI * Width * Width;
+    //    }
+    //}
 
     //public class Calculator
     //{
-    //    public class Triangle
-    //    {
-    //        public double width, height;
-
-    //        public Triangle(double h, double w)
-    //        {
-    //            width = w;
-    //            height = h;
-    //        }
-
-    //        public double triangleArea()
-    //        {
-    //            return width * height / 2;
-    //        }
-    //    }
-
-
-    //    public class Square
-    //    {
-    //        private double side;
-
-    //        public Square(double s)
-    //        {
-    //            side = s;
-    //        }
-
-    //        public double squareArea()
-    //        {
-    //            return side * side;
-    //        }
-    //    }
-
-    //    public class Rectangle
-    //    {
-    //        private double width, height;
-
-    //        public Rectangle(double h, double w)
-    //        {
-    //            width = w;
-    //            height = h;
-    //        }
-
-    //        public double rectangleArea()
-    //        {
-    //            return width * height;
-    //        }
-    //    }
-
-    //    public class Circle
-    //    {
-    //        private double radius;
-
-    //        public Circle(double r)
-    //        {
-    //            radius = r;
-    //        }
-
-    //        public double circleArea()
-    //        {
-    //            return Math.PI * radius * radius;
-    //        }
-    //    }
-
-    //    public double GetTotalArea(double[] areas)
+    //    public double GetTotalArea(params TwoDShape[] areas)
     //    {
     //        double totalArea = 0;
     //        for (int i = 0; i < areas.Length; i++)
     //        {
-    //            totalArea += areas[i];
+    //            totalArea += areas[i].Area();
     //        }
-    //        return totalArea;
-    //    }
-
-    //    static void Main()
-    //    {
-    //        Calculator calc = new Calculator();
-    //        //double[] areas = { new Triangle(10, 20), new Square(6), };
-    //        var square = new Square(6);
-    //        Console.WriteLine(square.squareArea());
-    //        Console.ReadKey();
+    //        return Math.Round(totalArea,2);
     //    }
     //}
 
+    //class TwoDShapeDemo
+    //{
+    //    static void Main()
+    //    {
+    //        Calculator calc = new Calculator();
+
+    //        TwoDShape[] shapes = new TwoDShape[6];
+
+    //        shapes[0] = new Triangle(8.0, 12.0);
+    //        shapes[1] = new Square(10);
+    //        shapes[2] = new Rectangle(10, 4);
+    //        shapes[3] = new Triangle(7.0);
+    //        shapes[4] = new TwoDShape(10, 10);
+    //        shapes[5] = new Circle(5);
+
+    //        for (int i = 0; i < shapes.Length; i++)
+    //        {
+    //            Console.WriteLine("Square of object is: " + shapes[i].Area());
+    //            Console.WriteLine();
+    //        }
+
+    //        TwoDShape[] shapes1 = { new Triangle(8.0, 12.0), new Square(10), new Rectangle(10, 4), new Triangle(7.0), new TwoDShape(10, 10), new Circle(5) };
+
+    //        for (int i = 0; i < shapes1.Length; i++)
+    //        {
+    //            Console.WriteLine("Square of object is: " + shapes1[i].Area());
+    //            Console.WriteLine();
+    //        }
+
+    //        Console.WriteLine(calc.GetTotalArea(shapes1));
+
+    //        Console.WriteLine(calc.GetTotalArea(new Triangle(8.0, 12.0), new Square(10), new Rectangle(10, 4), new Triangle(7.0), new TwoDShape(10, 10), new Circle(5)));
+
+    //        Console.ReadKey();
+    //    }
+    //}
 
 
 
@@ -1330,7 +1581,7 @@ namespace Codewars_fundamentals
 
     //            return output;
     //        }
-            
+
 
     //        //List<Str> list = new List<Str>();
     //        //string output = "";
