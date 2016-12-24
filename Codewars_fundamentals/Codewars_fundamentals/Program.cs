@@ -9,26 +9,444 @@ using System.Text.RegularExpressions;
 
 namespace Codewars_fundamentals
 {
+    //
+
+    //Complete the pattern #8
+
+    //public class NumberPyramid
+    //{
+    //    public static string Pattern(int n)
+    //    {
+    //        if (n < 1)
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            string str = "";                
+    //            char ch = ' ';
+
+    //            for (int i = 1; i <= n; i++)
+    //            {
+    //                for (int k = n-i; k >= 1; k--)
+    //                {
+    //                    str += ch;
+    //                }
+
+    //                for (int j = 1; j <= i; j++)
+    //                {
+    //                    if (j < 10)
+    //                    {
+    //                        str += j;
+    //                    }
+    //                    else
+    //                    {
+    //                        str += j % 10;
+    //                    }
+    //                }
+
+    //                for (int h = i-1; h > 0; h--)
+    //                {
+    //                    if (h < 10)
+    //                    {
+    //                        str += h;
+    //                    }
+    //                    else
+    //                    {
+    //                        str += h % 10;
+    //                    }
+    //                }
+
+    //                for (int k = n - i; k >= 1; k--)
+    //                {
+    //                    str += ch;
+    //                }
+
+    //                str += "\n";
+    //            }
+
+    //            return str.Trim('\n');
+    //        }
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Pattern(20));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Complete the pattern #7
+
+    //public class CyclicalPermutation
+    //{
+    //    public static string Pattern(int n)
+    //    {
+    //        if (n < 1)
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            string str = "";
+
+    //            for (int i = 1; i <= n; i++)
+    //            {
+    //                for (int j = i; j <= n; j++)
+    //                {
+    //                    str += j;
+
+    //                }
+
+    //                for (int k = 1; k < i; k++)
+    //                {
+    //                    str += k;
+    //                }
+
+    //                str += "\n";                    
+    //            }
+
+    //            return str.Trim();
+    //        }
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Pattern(6));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Complete the pattern #6
+
+    //public class Kata
+    //{
+    //    public static string Pattern(int n)
+    //    {
+    //        if (n < 1)
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            string str = "";
+
+    //            for (int i = 1; i <= n;)
+    //            {
+    //                for (int j = i; j > 0; j--)
+    //                {
+    //                    str += i;
+    //                }
+    //                str += "\n";
+    //                i += 2;
+    //            }
+
+    //            return str.Trim();
+    //        }
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Pattern(6));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Complete the pattern #5
+
+    //public class Kata
+    //{
+    //    public static string Pattern(int n)
+    //    {
+    //        if (n < 1 || n == 1)
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            string str = "";
+
+    //            for (int i = 0; i <= n; )
+    //            {
+    //                for (int j = i; j > 0; j--)
+    //                {
+    //                    str += i;
+    //                }
+    //                str += "\n";
+    //                i += 2;
+    //            }
+
+    //            return str.Trim();
+    //        }
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Pattern(2));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Complete the pattern #4
+
+    //public class Kata
+    //{
+    //    public static string Pattern(int n)
+    //    {
+    //        if (n < 1)
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            string str = "";
+
+    //            for (int i = 1; i <= n; i++)
+    //            {
+    //                for (int j = i; j <= n; j++)
+    //                {
+    //                    str += j;
+    //                }
+    //                str += "\n";
+    //            }
+
+    //            return str.Trim();
+    //        }
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Pattern(5));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Complete the pattern #3
+
+    //public class Kata
+    //{
+    //    public static string Pattern(int n)
+    //    {
+    //        if (n < 1)
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            string str = "";
+
+    //            for (int i = n; i > 0; i--)
+    //            {
+    //                for (int j = n; j >= i; j--)
+    //                {
+    //                    str += j;
+    //                }
+    //                str += "\n";
+    //            }
+
+    //            return str.Trim();
+    //        }
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Pattern(5));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Complete the pattern #2
+
+    //public class Kata
+    //{
+    //    public static string Pattern(int n)
+    //    {
+    //        if (n < 1)
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            string str = "";
+
+    //            for (int i = 0; i < n; i++)
+    //            {
+    //                for (int j = n; j > i; j--)
+    //                {
+    //                    str += j;
+    //                }
+    //                str += "\n";
+    //            }
+
+    //            return str.Trim();
+    //        }
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Pattern(5));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //Complete the pattern #1
+
+    //public class Kata
+    //{
+    //    public static string Pattern(int n)
+    //    {
+    //        if ( n < 1 )
+    //        {
+    //            return "";
+    //        }
+    //        else
+    //        {
+    //            string str = "";
+
+    //            for (int i = 1; i <= n; i++)
+    //            {
+    //                for (int j = 1; j <= i; j++)
+    //                {
+    //                    str += i;
+    //                }
+    //                str += "\n";                    
+    //            }
+
+    //            return str.Trim();
+    //        }
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(Pattern(5));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //(L33T + Grεεκ) Case
+    //A=α(Alpha)      B=β(Beta)      D=δ(Delta)
+    //E=ε(Epsilon)    I=ι(Iota)      K=κ(Kappa)
+    //N=η(Eta)        O=θ(Theta)     P=ρ(Rho)
+    //R=π(Pi)         T=τ(Tau)       U=μ(Mu)
+    //V=υ(Upsilon)    W=ω(Omega)     X=χ(Chi)
+    //Y=γ(Gamma)
+
+    //public class L33TGreekCase
+    //{
+    //    public static string GreekL33t(string str)
+    //    {
+    //        string output = str.ToLower();
+    //        output = output.Replace("a", "α");
+    //        output = output.Replace("b", "β");
+    //        output = output.Replace("d", "δ");
+    //        output = output.Replace("e", "ε");
+    //        output = output.Replace("i", "ι");
+    //        output = output.Replace("k", "κ");
+    //        output = output.Replace("n", "η");
+    //        output = output.Replace("o", "θ");
+    //        output = output.Replace("p", "ρ");
+    //        output = output.Replace("r", "π");
+    //        output = output.Replace("t", "τ");
+    //        output = output.Replace("u", "μ");
+    //        output = output.Replace("v", "υ");
+    //        output = output.Replace("w", "ω");
+    //        output = output.Replace("x", "χ");
+    //        output = output.Replace("y", "γ");
+
+    //        return output;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(GreekL33t("CodeWars"));
+    //        Console.WriteLine(GreekL33t("Kata"));
+    //        Console.WriteLine(GreekL33t("kumite"));
+    //        Console.WriteLine(GreekL33t("greekleet"));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
+    //ToBinary
+
+    //public class Converter
+    //{
+    //    public static string ToBinary(int n)
+    //    {
+    //        string str = Convert.ToString(n,2);
+    //        return str;
+    //    }
+
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(ToBinary(2));
+    //        Console.WriteLine(ToBinary(3));
+    //        Console.WriteLine(ToBinary(4));
+    //        Console.WriteLine(ToBinary(5));
+    //        Console.WriteLine(ToBinary(-3));
+    //        Console.ReadKey();
+    //    }
+    //}
+
+
+
+
+
     //Required Data I
 
-    public class Kata
-    {
-        public static object[] CountSel(int[] lst)
-        {
-            int[] result = new int[] { 0, 0, 0, 0 };
+    //public class Kata
+    //{
+    //    public static object[] CountSel(int[] lst)
+    //    {
+    //        int[] result = new int[] { 0, 0, 0, 0 };
 
-            result[0] = lst.Length;
+    //        result[0] = lst.Length;
 
 
-            return new object[0];
-        }
+    //        return new object[0];
+    //    }
 
-        static void Main()
-        {
-            Console.WriteLine(CountSel(new[] { 4, 4, 2, -3, 1, 4, 3, 2, 0, -5, 2, -2, -2, -5 }));
-            Console.ReadKey();
-        }
-    }
+    //    static void Main()
+    //    {
+    //        Console.WriteLine(CountSel(new[] { 4, 4, 2, -3, 1, 4, 3, 2, 0, -5, 2, -2, -2, -5 }));
+    //        Console.ReadKey();
+    //    }
+    //}
 
 
 
@@ -304,14 +722,13 @@ namespace Codewars_fundamentals
 
     //    public MarineWeaponUpgrade(IMarine marine)
     //    {
-    //        marine.Damage++;     
     //        this.marine = marine;
-    //        //++this.marine.Damage;
+    //        this.Damage = marine.Damage + 1;
+    //        this.Armor = marine.Armor;
     //    }
 
-    //    public int Damage { get { return this.marine.Damage; } set { } }
-
-    //    public int Armor { get { return this.marine.Armor; } set {  } }
+    //    public int Damage { get; set; }
+    //    public int Armor { get; set; }
     //}
 
     //public class MarineArmorUpgrade : IMarine
@@ -320,14 +737,12 @@ namespace Codewars_fundamentals
 
     //    public MarineArmorUpgrade(IMarine marine)
     //    {
-    //        marine.Armor++;
     //        this.marine = marine;
-    //        //++this.marine.Armor;
+    //        this.Damage = marine.Damage;
+    //        this.Armor = marine.Armor+1;
     //    }
-
-    //    public int Damage { get { return this.marine.Damage; } set { } }
-
-    //    public int Armor { get { return this.marine.Armor; } set {  } }
+    //    public int Damage { get; set; }
+    //    public int Armor { get; set; }
     //}
 
     //public class DecoratorDemo
@@ -1362,14 +1777,47 @@ namespace Codewars_fundamentals
 
     //public class ToSmallest
     //{
-    //    public static long[] Smallest(long n)
+    //    public static string Smallest(long n)
     //    {
+    //        long[] output = new long[] { 0, 0, 0 };
 
+    //        char[] charInput = n.ToString().ToCharArray();
+
+    //        for (int i = 0; i < charInput.Length; i++)
+    //            {
+    //                if (i == 1)
+    //                {
+    //                    char ch0 = charInput[0];
+    //                    char ch1 = charInput[1];
+    //                    char ch3 = charInput[0];
+    //                    ch0 = ch1;
+    //                    ch1 = ch0;
+
+    //                    output[0] = Convert.ToInt64(charInput.ToString());
+    //                    output[1] = 0;
+    //                    output[2] = 1;
+
+    //                    break;
+    //                }
+
+    //                //if (charInput[i] == 0)
+    //                //{
+
+    //                //}
+    //            }
+
+    //            return string.Join(",", output);            
     //    }
 
     //    static void Main()
-    //    {
+    //    {           
+    //        Console.WriteLine(Smallest(209917)); /*"[29917, 0, 1]"*/
+    //        Console.WriteLine(Smallest(261235)); /*"[126235, 2, 0]"*/
+    //        Console.WriteLine(Smallest(285365)); /*"[238565, 3, 1]"*/
+    //        Console.WriteLine(Smallest(269045)); /*"[26945, 3, 0]"*/
+    //        Console.WriteLine(Smallest(296837)); /*"[239687, 4, 1]"*/
 
+    //        Console.ReadKey();
     //    }
     //}
 
